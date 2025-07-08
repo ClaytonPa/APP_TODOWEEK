@@ -4,15 +4,33 @@ Una aplicación de lista de tareas (To-Do List) desarrollada con **Flutter**, co
 
 Permite gestionar tareas de forma simple con almacenamiento local mediante **SQLite**.
 
+---
+
+## 🆕 Actualización reciente
+
+Se ha integrado autenticación y sincronización en la nube con **Firebase**:
+
+- 🔐 Inicio de sesión con **Google** y **correo/contraseña** usando Firebase Authentication.
+- ☁️ Identificación de usuarios y manejo seguro de sesiones.
+- ⚙️ Configuración incluida en `firebase_options.dart` y `google-services.json`.
+
+> Estas mejoras permiten que cada usuario acceda de forma personalizada a su cuenta, preparando la app para una futura sincronización completa en la nube.
+
+---
+
 ## ✨ Características
 
 - ✅ Agregar nuevas tareas
 - 📝 Editar y eliminar tareas existentes
 - 📌 Marcar tareas como completadas
 - 💾 Almacenamiento persistente usando SQLite
+- 🔐 Autenticación con Google y correo/contraseña
+- ☁️ Sincronización de usuario con Firebase Authentication
 - 📱 Multiplataforma: soporta Android, iOS y Web
 
 > Nota: Actualmente no se soporta ordenamiento por estado o fecha.
+
+---
 
 ## 🚀 Instalación y ejecución
 
@@ -30,24 +48,29 @@ Asegúrate de tener instalado:
 flutter pub get
 flutter run
 
-## Ejecutar en dispositivos móviles
+
+### Ejecutar en web
 
 flutter config --enable-web
 flutter run -d chrome
-
 ℹ️ SQLite no es completamente soportado en la web, por lo que algunas funcionalidades pueden estar limitadas o no disponibles.
 
-📁 Estructura del proyecto
+🛠️ Tecnologías utilizadas
+Flutter
 
-### 🛠️ Tecnologías utilizadas
--Flutter
--Dart
--sqflite – plugin SQLite para Flutter
+Dart
 
+sqflite – Plugin SQLite para Flutter
 
-### 🧪 Futuras mejoras
+Firebase Authentication
 
+Google Sign-In
+
+🧪 Futuras mejoras
 🔔 Notificaciones locales
+
 📅 Ordenamiento por fecha o estado
+
 🌓 Modo oscuro
-☁️ Sincronización en la nube
+
+☁️ Sincronización completa de tareas en la nube
