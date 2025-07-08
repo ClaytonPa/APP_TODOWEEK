@@ -42,17 +42,7 @@ Asegúrate de tener instalado:
 - Un editor como [Visual Studio Code](https://code.visualstudio.com/) o Android Studio
 - Dispositivo físico o emulador/simulador
 
-### Ejecutar en dispositivos móviles
 
-```bash
-flutter pub get
-flutter run
-
-
-### Ejecutar en web
-
-flutter config --enable-web
-flutter run -d chrome
 ℹ️ SQLite no es completamente soportado en la web, por lo que algunas funcionalidades pueden estar limitadas o no disponibles.
 
 🛠️ Tecnologías utilizadas
@@ -74,3 +64,9 @@ Google Sign-In
 🌓 Modo oscuro
 
 ☁️ Sincronización completa de tareas en la nube
+
+### Ejecutar en dispositivos móviles
+
+```bash
+flutter pub get
+flutter run
