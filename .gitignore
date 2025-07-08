@@ -13,6 +13,7 @@ android/app/release
 *.apk
 *.ap_
 *.aab
+local.properties
 
 # iOS related
 ios/Pods/
@@ -52,6 +53,10 @@ windows/Flutter/generated_plugin_registrant.cc
 linux/Flutter/ephemeral/
 linux/Flutter/generated_plugin_registrant.cc
 
+# Firebase related (optional – protect sensitive info)
+lib/firebase_options.dart
+firebase.json
+
 # Miscellaneous
 *.class
 *.log
@@ -81,4 +86,6 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-#
+# Env & secrets
+.env
+.env.*
