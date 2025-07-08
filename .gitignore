@@ -57,6 +57,10 @@ linux/Flutter/generated_plugin_registrant.cc
 lib/firebase_options.dart
 firebase.json
 
+# Firebase config
+android/app/google-services.json
+
+
 # Miscellaneous
 *.class
 *.log
